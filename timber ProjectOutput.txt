@@ -1,0 +1,16 @@
+*** Found local files:
+***   * /root/airflow/logs/dag_id=Timberland_stock_analysis/run_id=manual__2023-06-22T06:15:19.733980+00:00/task_id=run_spark_job/attempt=1.log
+*** Found logs served from host http://DESKTOP-7M0ROP4.:8793/log/dag_id=Timberland_stock_analysis/run_id=manual__2023-06-22T06:15:19.733980+00:00/task_id=run_spark_job/attempt=1.log
+[2023-06-22, 06:15:23 UTC] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Timberland_stock_analysis.run_spark_job manual__2023-06-22T06:15:19.733980+00:00 [queued]>
+[2023-06-22, 06:15:23 UTC] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Timberland_stock_analysis.run_spark_job manual__2023-06-22T06:15:19.733980+00:00 [queued]>
+[2023-06-22, 06:15:23 UTC] {taskinstance.py:1308} INFO - Starting attempt 1 of 4
+[2023-06-22, 06:15:23 UTC] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): run_spark_job> on 2023-06-22 06:15:19.733980+00:00
+[2023-06-22, 06:15:23 UTC] {standard_task_runner.py:57} INFO - Started process 69101 to run task
+[2023-06-22, 06:15:23 UTC] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Timberland_stock_analysis', 'run_spark_job', 'manual__2023-06-22T06:15:19.733980+00:00', '--job-id', '489', '--raw', '--subdir', 'DAGS_FOLDER/temberland_project.py', '--cfg-path', '/tmp/tmpbj8spbob']
+[2023-06-22, 06:15:23 UTC] {standard_task_runner.py:85} INFO - Job 489: Subtask run_spark_job
+[2023-06-22, 06:15:23 UTC] {task_command.py:410} INFO - Running <TaskInstance: Timberland_stock_analysis.run_spark_job manual__2023-06-22T06:15:19.733980+00:00 [running]> on host DESKTOP-7M0ROP4.
+[2023-06-22, 06:15:23 UTC] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ranga' AIRFLOW_CTX_DAG_ID='Timberland_stock_analysis' AIRFLOW_CTX_TASK_ID='run_spark_job' AIRFLOW_CTX_EXECUTION_DATE='2023-06-22T06:15:19.733980+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-22T06:15:19.733980+00:00'
+[2023-06-22, 06:15:39 UTC] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-22, 06:15:39 UTC] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Timberland_stock_analysis, task_id=run_spark_job, execution_date=20230622T061519, start_date=20230622T061523, end_date=20230622T061539
+[2023-06-22, 06:15:39 UTC] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-22, 06:15:40 UTC] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
